@@ -12,7 +12,7 @@ import Enemy from './components/Enemy';
 ReactDOM.render(
   <React.StrictMode>
     <World>
-      <Arena arena="baki anime">
+      <Arena arena="baki anime" status={true}>
         <Hero name="Baki Hanma" subtitle="The son of the Ogre" image={baki_url} />
         <Enemy name="Yujiro" subtitle="The Ogre Himself" image={yujiro_url} />
       </Arena>
