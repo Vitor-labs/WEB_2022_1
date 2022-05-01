@@ -1,0 +1,19 @@
+{
+  "name": "atividade03",
+  "version": "1.0.0",
+  "description": "atividade 03 express server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Dev: Running server\" && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitor-labs/WEB_2022_1.git"
+  },
+  "author": "Vitor Hugo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vitor-labs/WEB_2022_1/atividade03/issues"
+  },
+  "homepage": "https://github.com/Vitor-labs/WEB_2022_1#readme"
+}
