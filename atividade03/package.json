@@ -6,6 +6,7 @@
     "dev": "echo \"Running Server\" && nodemon server.js"
   },
   "dependencies": {
+    "nodemon": "^2.0.16",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
