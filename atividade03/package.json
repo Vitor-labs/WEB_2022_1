@@ -5,14 +5,23 @@
   "description": "Repositório de atividades, atividade 03, do curso de desenvolvimento de software para WEB, Express server & React app",
   "main": "index.js",
   "scripts": {
-    "dev": "echo \"Running Server\" && nodemon server.js"
+    "dev": "echo \"Running Server\" && vite",
+    "start": "node index.js",
+    "build": "vite build",
+    "test": "vite test",
+    "lint": "vite lint",
+    "precommit": "npm run lint && npm run test",
+    "prepush": "npm run build"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "bootstrap": "^5.1.3",
     "dotenv": "^16.0.0",
-    "express": "^4.18.1",
+    "json-server": "^0.17.0",
     "nodemon": "^2.0.16",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
