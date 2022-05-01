@@ -1,19 +1,18 @@
 {
   "name": "atividade03",
-  "version": "1.0.0",
-  "description": "atividade 03 express server",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Dev: Running server\" && npm run dev"
+    "dev": "echo \"Running Server\" && nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Vitor-labs/WEB_2022_1.git"
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
-  "author": "Vitor Hugo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Vitor-labs/WEB_2022_1/atividade03/issues"
-  },
-  "homepage": "https://github.com/Vitor-labs/WEB_2022_1#readme"
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "vite": "^2.9.5"
+  }
 }
