@@ -1,5 +1,5 @@
-import Student from "../models/Student";
-import StudentsService from "../services/StudentsService";
+import Student from "../models/student";
+import StudentsService from "../services/student";
 
 class StudentsController {
     async create(request, response) {
