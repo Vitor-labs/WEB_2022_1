@@ -58,13 +58,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="createStudent" element={<CreateStudent />} />
-        <Route path="listStudent" element={<ReadStudent />} />
-        <Route path="editStudent/:id" element={<UpdateStudent />} />
-        <Route path="createProfessor" element={<CreateProfessor />} />
-        <Route path="listProfessor" element={<ReadProfessor />} />
-        <Route path="editProfessor/:id" element={<UpdateProfessor />} />
+        <Route path="/createStudent" element={<CreateStudent />} />
+        <Route path="/editStudent/:id" element={<EditStudent />} />
+        <Route path="/listStudents" element={<ListStudent />} />
+        <Route path="/createProfessor" element={<CreateProfessor />} />
+        <Route path="/editProfessor/:id" element={<EditProfessor />} />
+        <Route path="/listProfessors" element={<ListProfessor />} />
       </Routes>
     </div>
   );
