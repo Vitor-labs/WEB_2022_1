@@ -2,8 +2,8 @@ import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import Home from "./components/Home";
-import About from "./components/About";
+import Home from "./components/home";
+import About from "./components/about";
 
 import CreateStudent from "./components/student/CreateStudent";
 import ReadStudent from "./components/student/ReadStudent";
@@ -35,7 +35,7 @@ function App() {
                   <Link to="/createStudent" className="nav-link">Criar Estudante</Link>
                 </li>
                 <li className="navitem">
-                  <Link to="/listStudent" className="nav-link">Listar Estudante</Link>
+                  <Link to="/readStudent" className="nav-link">Listar Estudante</Link>
                 </li>
               </ul>
             </li>
@@ -48,7 +48,7 @@ function App() {
                   <Link to="/createProfessor" className="nav-link">Criar Professor</Link>
                 </li>
                 <li className="navitem">
-                  <Link to="/listProfessor" className="nav-link">Listar Professor</Link>
+                  <Link to="/readProfessor" className="nav-link">Listar Professor</Link>
                 </li>
               </ul>
             </li>
@@ -58,12 +58,13 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/createStudent" element={<CreateStudent />} />
-        <Route path="/editStudent/:id" element={<UpdateStudent />} />
-        <Route path="/listStudents" element={<ListStudent />} />
+        <Route path="/updateStudent/:id" element={<UpdateStudent />} />
+        <Route path="/readStudents" element={<ListStudent />} />
         <Route path="/createProfessor" element={<CreateProfessor />} />
-        <Route path="/editProfessor/:id" element={<UpdateProfessor />} />
-        <Route path="/listProfessors" element={<ListProfessor />} />
+        <Route path="/updateProfessor/:id" element={<UpdateProfessor />} />
+        <Route path="/readProfessors" element={<ListProfessor />} />
       </Routes>
     </div>
   );
