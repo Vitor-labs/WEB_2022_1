@@ -1,4 +1,4 @@
-import Professor from '../models/Professor'
+import Professor from '../models/professor'
 
 class ProfessorsService {
     async create(name, university, degree) {

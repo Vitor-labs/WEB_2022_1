@@ -1,4 +1,4 @@
-import Student from '../models/Student'
+import Student from '../models/student'
 
 class StudentsService {
     async create(name, course, ira) {
@@ -16,7 +16,7 @@ class StudentsService {
             const studentSearch = await Student.findByPk(id)
 
             if (studentSearch === null)
-                return { error: "student não encontrado pelo id" }
+                return { error: "estudante não encontrado pelo id" }
 
             return { data: studentSearch }
         } catch (error) {
@@ -28,7 +28,7 @@ class StudentsService {
         try {
             await Student.update({ name, course, ira },
                 { where: { id: student.id } })
-            return { data: 'Student atualizado' }
+            return { data: 'estudante atualizado' }
         } catch (error) {
             return { error: 'Erro ao atualizar student' }
         }
@@ -38,10 +38,10 @@ class StudentsService {
         try {
             const studentSearch = await Student.findByPk(id)
             if (studentSearch === null)
-                return { error: "Student não encontrado pelo id" }
+                return { error: "estudante não encontrado pelo id" }
 
             await Student.destroy({ where: { id } })
-            return { data: 'Student removido' }
+            return { data: 'estudante removido' }
         } catch (error) {
             return { error: 'Erro ao remover student' }
         }
